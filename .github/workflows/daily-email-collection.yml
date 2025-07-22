@@ -3,7 +3,7 @@ name: Daily Email Collection
 on:
   schedule:
     # Run every day at 8:00 AM UTC
-    - cron: "0 8 * * *"
+    - cron: "0 * * * *"
   workflow_dispatch: # Allow manual triggering for testing
 
 permissions:
