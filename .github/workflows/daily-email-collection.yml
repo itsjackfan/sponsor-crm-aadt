@@ -3,7 +3,7 @@ name: Daily Email Collection
 on:
   schedule:
     # Run every day at 8:00 AM UTC
-    - cron: '0 8 * * *'
+    - cron: "0 8 * * *"
   workflow_dispatch: # Allow manual triggering for testing
 
 permissions:
@@ -13,55 +13,57 @@ permissions:
 jobs:
   collect-emails:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
 
-    - name: Install dependencies
-      run: |
-        cd backend
-        pip install -e .
+      - name: Install dependencies
+        run: |
+          cd backend
+          pip install -e .
 
-    - name: Create credentials file
-      env:
-        GMAIL_CREDENTIALS: ${{ secrets.GMAIL_CREDENTIALS }}
-      run: |
-        echo "$GMAIL_CREDENTIALS" > backend/credentials.json
+      - name: Create credentials file
+        env:
+          GMAIL_CREDENTIALS: ${{ secrets.GMAIL_CREDENTIALS }}
+        run: |
+          echo "$GMAIL_CREDENTIALS" > backend/credentials.json
 
-    - name: Run email collection
-      env:
-        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-        SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-        GMAIL_CREDENTIALS_FILE: credentials.json
-        GMAIL_TOKEN_FILE: token.json
-        GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
-        GMAIL_USER_EMAIL: ${{ secrets.GMAIL_USER_EMAIL }}
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        LOG_LEVEL: INFO
-      run: |
-        cd backend
-        python email_collector/main.py
+      - name: Run email collection
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          GMAIL_CREDENTIALS_FILE: credentials.json
+          GMAIL_TOKEN_FILE: token.json
+          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
+          GMAIL_USER_EMAIL: ${{ secrets.GMAIL_USER_EMAIL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
+          LOG_LEVEL: INFO
+        run: |
+          cd backend
+          python email_collector/main.py
 
-    - name: Cleanup credentials
-      if: always()
-      run: |
-        rm -f backend/credentials.json
-        rm -f backend/token.json
+      - name: Cleanup credentials
+        if: always()
+        run: |
+          rm -f backend/credentials.json
+          rm -f backend/token.json
 
-    - name: Notify on failure
-      if: failure()
-      uses: actions/github-script@v7
-      with:
-        script: |
-          github.rest.issues.create({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            title: 'Daily Email Collection Failed',
-            body: `The daily email collection workflow failed on ${new Date().toISOString()}.\n\nWorkflow run: ${context.payload.workflow_run?.html_url || 'N/A'}`
-          })
+      - name: Notify on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: 'Daily Email Collection Failed',
+              body: `The daily email collection workflow failed on ${new Date().toISOString()}.\n\nWorkflow run: ${context.payload.workflow_run?.html_url || 'N/A'}`
+            })
