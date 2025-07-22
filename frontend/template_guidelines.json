@@ -1,0 +1,772 @@
+{
+  "designSystem": {
+    "name": "Quicken Financial Dashboard",
+    "description": "A clean financial app design system with neutral whites and grays, accented by sophisticated navy sea blue",
+    "version": "1.0.0",
+    "theme": "Financial Neutral"
+  },
+  "colors": {
+    "primary": {
+      "navyBlue": {
+        "50": "#F0F4F8",
+        "100": "#D9E2EC",
+        "200": "#BCCCDC",
+        "300": "#9FB3C8",
+        "400": "#829AB1",
+        "500": "#627D98",
+        "600": "#486581",
+        "700": "#334E68",
+        "800": "#243B53",
+        "900": "#102A43"
+      },
+      "accent": "#334E68",
+      "accentHover": "#243B53",
+      "accentLight": "#F0F4F8",
+      "accentMuted": "#627D98"
+    },
+    "neutral": {
+      "background": "#FAFAFA",
+      "backgroundSecondary": "#F5F5F5",
+      "surface": "#FFFFFF",
+      "surfaceSecondary": "#F9FAFB",
+      "surfaceHover": "#F3F4F6",
+      "border": "#E5E7EB",
+      "borderLight": "#F3F4F6",
+      "borderMuted": "#D1D5DB",
+      "text": {
+        "primary": "#111827",
+        "secondary": "#6B7280",
+        "tertiary": "#9CA3AF",
+        "muted": "#D1D5DB",
+        "inverse": "#FFFFFF"
+      }
+    },
+    "chart": {
+      "primary": "#334E68",
+      "secondary": "#627D98",
+      "tertiary": "#9FB3C8",
+      "quaternary": "#BCCCDC",
+      "accent1": "#486581",
+      "accent2": "#829AB1",
+      "light1": "#D9E2EC",
+      "light2": "#F0F4F8"
+    },
+    "status": {
+      "positive": "#10B981",
+      "positiveLight": "#ECFDF5",
+      "negative": "#EF4444",
+      "negativeLight": "#FEF2F2",
+      "warning": "#F59E0B",
+      "warningLight": "#FFFBEB",
+      "info": "#334E68",
+      "infoLight": "#F0F4F8"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "mono": "'SF Mono', Monaco, 'Cascadia Code', Consolas, monospace"
+    },
+    "fontSizes": {
+      "xs": "12px",
+      "sm": "14px",
+      "base": "16px",
+      "lg": "18px",
+      "xl": "20px",
+      "2xl": "24px",
+      "3xl": "30px",
+      "4xl": "36px",
+      "5xl": "48px"
+    },
+    "fontWeights": {
+      "light": 300,
+      "normal": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "extrabold": 800
+    },
+    "lineHeights": {
+      "tight": 1.25,
+      "snug": 1.375,
+      "normal": 1.5,
+      "relaxed": 1.625
+    },
+    "styles": {
+      "sectionTitle": {
+        "fontSize": "24px",
+        "fontWeight": 600,
+        "color": "#111827",
+        "lineHeight": "1.25",
+        "marginBottom": "8px"
+      },
+      "sectionSubtitle": {
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "color": "#6B7280",
+        "lineHeight": "1.4",
+        "marginBottom": "24px"
+      },
+      "cardTitle": {
+        "fontSize": "18px",
+        "fontWeight": 600,
+        "color": "#111827",
+        "lineHeight": "1.3",
+        "marginBottom": "16px"
+      },
+      "cardValue": {
+        "fontSize": "30px",
+        "fontWeight": 700,
+        "color": "#111827",
+        "lineHeight": "1.1"
+      },
+      "cardLabel": {
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "color": "#6B7280",
+        "lineHeight": "1.4"
+      },
+      "listItemTitle": {
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "color": "#111827",
+        "lineHeight": "1.4"
+      },
+      "listItemSubtitle": {
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "color": "#6B7280",
+        "lineHeight": "1.4"
+      },
+      "listItemValue": {
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "color": "#111827",
+        "lineHeight": "1.4"
+      },
+      "listItemDate": {
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "color": "#9CA3AF",
+        "lineHeight": "1.3"
+      }
+    }
+  },
+  "spacing": {
+    "0": "0px",
+    "1": "4px",
+    "2": "8px",
+    "3": "12px",
+    "4": "16px",
+    "5": "20px",
+    "6": "24px",
+    "8": "32px",
+    "10": "40px",
+    "12": "48px",
+    "16": "64px",
+    "sidebarWidth": "280px",
+    "containerPadding": "24px",
+    "cardPadding": "20px",
+    "sectionGap": "32px"
+  },
+  "borderRadius": {
+    "none": "0px",
+    "sm": "4px",
+    "md": "8px",
+    "lg": "12px",
+    "xl": "16px",
+    "2xl": "20px",
+    "full": "9999px",
+    "card": "12px",
+    "button": "8px",
+    "badge": "6px",
+    "chart": "8px"
+  },
+  "shadows": {
+    "none": "none",
+    "sm": "0 1px 2px rgba(0, 0, 0, 0.05)",
+    "md": "0 4px 6px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.06)",
+    "lg": "0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05)",
+    "xl": "0 20px 25px rgba(0, 0, 0, 0.1), 0 8px 10px rgba(0, 0, 0, 0.04)",
+    "card": "0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06)",
+    "cardHover": "0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06)",
+    "navy": "0 4px 6px rgba(51, 78, 104, 0.1), 0 1px 3px rgba(51, 78, 104, 0.08)"
+  },
+  "layout": {
+    "containerMaxWidth": "1440px",
+    "sidebarWidth": "280px",
+    "contentPadding": "24px",
+    "gridGap": "24px",
+    "pageLayout": {
+      "display": "flex",
+      "backgroundColor": "#FAFAFA",
+      "minHeight": "100vh"
+    }
+  },
+  "components": {
+    "sidebar": {
+      "width": "280px",
+      "backgroundColor": "#FFFFFF",
+      "borderRight": "1px solid #E5E7EB",
+      "padding": "24px 0",
+      "position": "fixed",
+      "height": "100vh",
+      "overflowY": "auto",
+      "brand": {
+        "padding": "0 24px 32px 24px",
+        "display": "flex",
+        "alignItems": "center",
+        "logo": {
+          "width": "32px",
+          "height": "32px",
+          "backgroundColor": "#334E68",
+          "borderRadius": "8px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "color": "#FFFFFF",
+          "fontSize": "16px",
+          "fontWeight": 700
+        },
+        "text": {
+          "fontSize": "20px",
+          "fontWeight": 700,
+          "color": "#111827",
+          "marginLeft": "12px"
+        }
+      },
+      "navItems": {
+        "padding": "12px 24px",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "color": "#6B7280",
+        "textDecoration": "none",
+        "display": "flex",
+        "alignItems": "center",
+        "gap": "12px",
+        "borderRadius": "0px",
+        "transition": "all 200ms ease",
+        "hover": {
+          "color": "#111827",
+          "backgroundColor": "#F9FAFB"
+        },
+        "active": {
+          "color": "#334E68",
+          "backgroundColor": "#F0F4F8",
+          "fontWeight": 600
+        }
+      },
+      "icons": {
+        "width": "20px",
+        "height": "20px",
+        "strokeWidth": "1.5px"
+      }
+    },
+    "mainContent": {
+      "marginLeft": "280px",
+      "padding": "24px",
+      "width": "calc(100% - 280px)",
+      "maxWidth": "calc(1440px - 280px)"
+    },
+    "pageHeader": {
+      "marginBottom": "32px",
+      "title": {
+        "fontSize": "24px",
+        "fontWeight": 600,
+        "color": "#111827",
+        "lineHeight": "1.25"
+      },
+      "subtitle": {
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "color": "#6B7280",
+        "marginTop": "4px"
+      },
+      "actions": {
+        "display": "flex",
+        "alignItems": "center",
+        "gap": "12px",
+        "marginTop": "16px"
+      }
+    },
+    "contentGrid": {
+      "display": "grid",
+      "gridTemplateColumns": "320px 1fr",
+      "gap": "24px",
+      "marginBottom": "32px"
+    },
+    "card": {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": "12px",
+      "padding": "20px",
+      "border": "1px solid #E5E7EB",
+      "boxShadow": "0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06)",
+      "transition": "all 200ms ease",
+      "hover": {
+        "boxShadow": "0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06)"
+      }
+    },
+    "accountsCard": {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": "12px",
+      "padding": "0",
+      "border": "1px solid #E5E7EB",
+      "boxShadow": "0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06)",
+      "overflow": "hidden",
+      "header": {
+        "padding": "20px 20px 16px 20px",
+        "borderBottom": "1px solid #F3F4F6",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "title": {
+          "fontSize": "18px",
+          "fontWeight": 600,
+          "color": "#111827"
+        }
+      },
+      "netWorth": {
+        "padding": "16px 20px",
+        "borderBottom": "1px solid #F3F4F6",
+        "backgroundColor": "#F9FAFB",
+        "title": {
+          "fontSize": "16px",
+          "fontWeight": 600,
+          "color": "#111827",
+          "marginBottom": "4px"
+        },
+        "value": {
+          "fontSize": "24px",
+          "fontWeight": 700,
+          "color": "#334E68"
+        }
+      },
+      "accountGroup": {
+        "borderBottom": "1px solid #F3F4F6",
+        "header": {
+          "padding": "12px 20px",
+          "backgroundColor": "#FAFAFA",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "cursor": "pointer",
+          "title": {
+            "fontSize": "14px",
+            "fontWeight": 600,
+            "color": "#6B7280"
+          },
+          "value": {
+            "fontSize": "16px",
+            "fontWeight": 700,
+            "color": "#111827"
+          }
+        }
+      },
+      "accountItem": {
+        "padding": "12px 20px 12px 40px",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "borderBottom": "1px solid #F9FAFB",
+        "hover": {
+          "backgroundColor": "#F9FAFB"
+        },
+        "title": {
+          "fontSize": "14px",
+          "fontWeight": 500,
+          "color": "#111827"
+        },
+        "value": {
+          "fontSize": "14px",
+          "fontWeight": 600,
+          "color": "#111827"
+        }
+      }
+    },
+    "spendingCard": {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": "12px",
+      "padding": "20px",
+      "border": "1px solid #E5E7EB",
+      "boxShadow": "0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06)",
+      "header": {
+        "display": "flex",
+        "alignItems": "flex-start",
+        "justifyContent": "space-between",
+        "marginBottom": "24px",
+        "title": {
+          "fontSize": "18px",
+          "fontWeight": 600,
+          "color": "#111827"
+        },
+        "subtitle": {
+          "fontSize": "14px",
+          "fontWeight": 400,
+          "color": "#6B7280",
+          "marginTop": "2px"
+        }
+      },
+      "chartSection": {
+        "display": "flex",
+        "alignItems": "center",
+        "gap": "32px",
+        "marginBottom": "32px",
+        "chart": {
+          "width": "120px",
+          "height": "120px"
+        },
+        "summary": {
+          "flex": "1",
+          "value": {
+            "fontSize": "36px",
+            "fontWeight": 700,
+            "color": "#111827",
+            "lineHeight": "1.1",
+            "marginBottom": "4px"
+          },
+          "label": {
+            "fontSize": "16px",
+            "fontWeight": 500,
+            "color": "#6B7280",
+            "marginBottom": "8px"
+          },
+          "detail": {
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "color": "#9CA3AF"
+          }
+        }
+      },
+      "legend": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "8px",
+        "marginBottom": "24px",
+        "item": {
+          "display": "flex",
+          "alignItems": "center",
+          "gap": "8px",
+          "fontSize": "14px",
+          "fontWeight": 500,
+          "color": "#6B7280",
+          "dot": {
+            "width": "8px",
+            "height": "8px",
+            "borderRadius": "50%"
+          }
+        }
+      }
+    },
+    "progressCard": {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": "12px",
+      "padding": "16px",
+      "border": "1px solid #E5E7EB",
+      "boxShadow": "0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06)",
+      "marginBottom": "16px",
+      "header": {
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "marginBottom": "12px",
+        "title": {
+          "fontSize": "14px",
+          "fontWeight": 600,
+          "color": "#111827"
+        },
+        "icon": {
+          "width": "16px",
+          "height": "16px",
+          "color": "#9CA3AF"
+        }
+      },
+      "progress": {
+        "marginBottom": "8px",
+        "bar": {
+          "height": "8px",
+          "backgroundColor": "#F3F4F6",
+          "borderRadius": "4px",
+          "overflow": "hidden",
+          "fill": {
+            "height": "100%",
+            "backgroundColor": "#334E68",
+            "borderRadius": "4px",
+            "transition": "width 300ms ease"
+          }
+        }
+      },
+      "details": {
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "left": {
+          "fontSize": "12px",
+          "fontWeight": 500,
+          "color": "#6B7280"
+        },
+        "right": {
+          "fontSize": "12px",
+          "fontWeight": 500,
+          "color": "#9CA3AF"
+        }
+      }
+    },
+    "transactionList": {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": "12px",
+      "padding": "0",
+      "border": "1px solid #E5E7EB",
+      "boxShadow": "0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06)",
+      "overflow": "hidden",
+      "header": {
+        "padding": "20px",
+        "borderBottom": "1px solid #F3F4F6",
+        "title": {
+          "fontSize": "18px",
+          "fontWeight": 600,
+          "color": "#111827"
+        },
+        "subtitle": {
+          "fontSize": "14px",
+          "fontWeight": 400,
+          "color": "#6B7280",
+          "marginTop": "2px"
+        }
+      },
+      "item": {
+        "padding": "16px 20px",
+        "borderBottom": "1px solid #F9FAFB",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "hover": {
+          "backgroundColor": "#F9FAFB"
+        },
+        "content": {
+          "flex": "1",
+          "title": {
+            "fontSize": "16px",
+            "fontWeight": 500,
+            "color": "#111827",
+            "marginBottom": "2px"
+          },
+          "category": {
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "color": "#6B7280"
+          }
+        },
+        "amount": {
+          "textAlign": "right",
+          "value": {
+            "fontSize": "16px",
+            "fontWeight": 600,
+            "color": "#111827",
+            "marginBottom": "2px"
+          },
+          "date": {
+            "fontSize": "12px",
+            "fontWeight": 400,
+            "color": "#9CA3AF"
+          }
+        }
+      }
+    },
+    "billsCard": {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": "12px",
+      "padding": "20px",
+      "border": "1px solid #E5E7EB",
+      "boxShadow": "0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06)",
+      "header": {
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "marginBottom": "20px",
+        "title": {
+          "fontSize": "18px",
+          "fontWeight": 600,
+          "color": "#111827"
+        },
+        "action": {
+          "fontSize": "14px",
+          "fontWeight": 500,
+          "color": "#334E68",
+          "textDecoration": "none",
+          "hover": {
+            "textDecoration": "underline"
+          }
+        }
+      },
+      "billItem": {
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "space-between",
+        "padding": "12px 0",
+        "borderBottom": "1px solid #F9FAFB",
+        "left": {
+          "display": "flex",
+          "alignItems": "center",
+          "gap": "12px",
+          "badge": {
+            "width": "24px",
+            "height": "24px",
+            "borderRadius": "6px",
+            "display": "flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "fontSize": "12px",
+            "fontWeight": 600,
+            "color": "#FFFFFF"
+          },
+          "content": {
+            "date": {
+              "fontSize": "12px",
+              "fontWeight": 500,
+              "color": "#9CA3AF",
+              "marginBottom": "2px"
+            },
+            "title": {
+              "fontSize": "14px",
+              "fontWeight": 500,
+              "color": "#111827"
+            }
+          }
+        },
+        "right": {
+          "textAlign": "right",
+          "value": {
+            "fontSize": "14px",
+            "fontWeight": 600,
+            "color": "#111827"
+          }
+        }
+      }
+    },
+    "button": {
+      "primary": {
+        "backgroundColor": "#334E68",
+        "color": "#FFFFFF",
+        "padding": "10px 16px",
+        "borderRadius": "8px",
+        "border": "none",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "cursor": "pointer",
+        "display": "inline-flex",
+        "alignItems": "center",
+        "gap": "8px",
+        "transition": "all 200ms ease",
+        "hover": {
+          "backgroundColor": "#243B53"
+        }
+      },
+      "secondary": {
+        "backgroundColor": "#FFFFFF",
+        "color": "#6B7280",
+        "padding": "8px 12px",
+        "border": "1px solid #E5E7EB",
+        "borderRadius": "6px",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "cursor": "pointer",
+        "transition": "all 200ms ease",
+        "hover": {
+          "backgroundColor": "#F9FAFB",
+          "color": "#111827"
+        }
+      },
+      "icon": {
+        "backgroundColor": "transparent",
+        "color": "#6B7280",
+        "padding": "8px",
+        "border": "none",
+        "borderRadius": "6px",
+        "cursor": "pointer",
+        "transition": "all 200ms ease",
+        "hover": {
+          "backgroundColor": "#F9FAFB",
+          "color": "#334E68"
+        }
+      }
+    },
+    "badge": {
+      "income": {
+        "backgroundColor": "#ECFDF5",
+        "color": "#059669",
+        "border": "1px solid #A7F3D0"
+      },
+      "employment": {
+        "backgroundColor": "#F0F4F8",
+        "color": "#334E68",
+        "border": "1px solid #BCCCDC"
+      },
+      "fitness": {
+        "backgroundColor": "#EDE9FE",
+        "color": "#7C2D12",
+        "border": "1px solid #C4B5FD"
+      },
+      "base": {
+        "padding": "4px 8px",
+        "borderRadius": "6px",
+        "fontSize": "12px",
+        "fontWeight": 600,
+        "display": "inline-flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "minWidth": "20px",
+        "height": "20px"
+      }
+    },
+    "chart": {
+      "donut": {
+        "size": "120px",
+        "strokeWidth": "16px",
+        "backgroundColor": "#F9FAFB"
+      },
+      "colors": {
+        "primary": "#334E68",
+        "secondary": "#627D98",
+        "tertiary": "#9FB3C8",
+        "quaternary": "#D9E2EC"
+      }
+    }
+  },
+  "patterns": {
+    "financialCard": {
+      "structure": "White background with subtle borders and shadows",
+      "hover": "Elevated shadow on hover",
+      "spacing": "20px internal padding with 24px gaps between cards"
+    },
+    "dataVisualization": {
+      "colors": "Navy blue primary with lighter blue variations",
+      "typography": "Bold values with muted labels",
+      "spacing": "Generous whitespace around charts and data"
+    },
+    "navigationSidebar": {
+      "structure": "Fixed sidebar with white background and gray borders",
+      "states": "Navy blue active states with light blue backgrounds",
+      "branding": "Navy blue logo with clean typography"
+    }
+  },
+  "states": {
+    "default": "Clean white surfaces with gray borders",
+    "hover": "Subtle gray background changes and elevated shadows",
+    "active": "Navy blue accents with light blue backgrounds",
+    "focus": "Navy blue borders with light focus rings",
+    "disabled": "Reduced opacity maintaining neutral palette"
+  },
+  "accessibility": {
+    "colorContrast": "Navy blue provides strong contrast against white/gray backgrounds",
+    "focusIndicators": "Navy blue focus rings with adequate contrast",
+    "semanticColors": "Green for positive, red for negative financial values"
+  },
+  "breakpoints": {
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1280px",
+    "2xl": "1536px"
+  }
+}

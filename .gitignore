@@ -34,3 +34,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# random
+*/credentials.json
+*/database_setup.sql
+**/__pycache__
+**/.ropeproject
+**/venv
